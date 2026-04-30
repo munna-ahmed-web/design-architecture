@@ -1,9 +1,3 @@
-import TestTanstackTable from "../components/custom/Accordion";
-
 export default function Home() {
-  return (
-    <div>
-      <TestTanstackTable />
-    </div>
-  );
+  return <div>Home Page</div>;
 }
