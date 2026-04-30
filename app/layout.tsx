@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { DM_Sans, DM_Serif_Display, JetBrains_Mono } from "next/font/google";
-import "./globals.css";
 
-export const dmSans = DM_Sans({
+import "./globals.css";
+import { cn } from "@/lib/utils";
+
+export const sans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
-  weight: "variable",
+  weight: ["400", "500", "700"],
 });
 
 export const dmSerif = DM_Serif_Display({
@@ -33,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${dmSans.variable} ${dmSerif.variable} ${jetbrains.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", dmSerif.variable, jetbrains.variable, sans.variable)}
     >
       <body className="min-h-full">{children}</body>
     </html>
