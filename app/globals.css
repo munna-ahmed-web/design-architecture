@@ -234,6 +234,70 @@
   --chart-5: var(--color-brand-200);
 }
 
+@theme inline {
+  /* ─────────────────────────────────────────────
+   * Shadcn UI theming default design tokens.
+   * These has been overridden by our custom design tokens.
+   * ───────────────────────────────────────────── */
+  --font-heading: var(--font-display);
+  --font-sans: var(--font-sans);
+
+  /* ── Backgrounds ─────────────────────────────── */
+  --color-background: var(--color-brand-50);
+  --color-card: var(--color-brand-50);
+  --color-popover: var(--color-brand-50);
+
+  /* ── Foregrounds ─────────────────────────────── */
+  --color-foreground: var(--color-brand-950);
+  --color-card-foreground: var(--color-brand-950);
+  --color-popover-foreground: var(--color-brand-950);
+
+  /* ── Primary ─────────────────────────────────── */
+  --color-primary: var(--color-brand-500);
+  /* --color-primary-foreground: var(--color-brand-950); */
+  --color-primary-foreground: var(--color-brand-100);
+
+  /* ── Secondary ───────────────────────────────── */
+  --color-secondary: var(--color-brand-100);
+  --color-secondary-foreground: var(--color-brand-800);
+
+  /* ── Muted ───────────────────────────────────── */
+  --color-muted: var(--color-brand-100);
+  --color-muted-foreground: var(--color-brand-600);
+
+  /* ── Accent ──────────────────────────────────── */
+  --color-accent: var(--color-brand-200);
+  --color-accent-foreground: var(--color-brand-800);
+
+  /* ── Destructive ─────────────────────────────── */
+  --color-destructive: var(--destructive);
+
+  /* ── Border / Input / Ring ───────────────────── */
+  --color-border: var(--color-brand-200);
+  --color-input: var(--color-brand-200);
+  --color-ring: var(--color-brand-500);
+
+  /* ── Sidebar ─────────────────────────────────── */
+  --color-sidebar: var(--color-brand-100);
+  --color-sidebar-foreground: var(--color-brand-900);
+
+  --color-sidebar-primary: var(--color-brand-500);
+  --color-sidebar-primary-foreground: var(--color-brand-950);
+
+  --color-sidebar-accent: var(--color-brand-200);
+  --color-sidebar-accent-foreground: var(--color-brand-800);
+
+  --color-sidebar-border: var(--color-brand-200);
+  --color-sidebar-ring: var(--color-brand-500);
+
+  /* ── Charts ──────────────────────────────────── */
+  --color-chart-1: var(--color-brand-200);
+  --color-chart-2: var(--color-brand-300);
+  --color-chart-3: var(--color-brand-400);
+  --color-chart-4: var(--color-brand-500);
+  --color-chart-5: var(--color-brand-600);
+}
+
 @layer base {
   body {
     font-family: var(--font-sans);
@@ -300,68 +364,4 @@
   html {
     @apply font-sans;
   }
-}
-
-@theme inline {
-  /* ─────────────────────────────────────────────
-   * Shadcn UI theming default design tokens.
-   * These has been overridden by our custom design tokens.
-   * ───────────────────────────────────────────── */
-  --font-heading: var(--font-display);
-  --font-sans: var(--font-sans);
-
-  /* ── Backgrounds ─────────────────────────────── */
-  --color-background: var(--color-brand-50);
-  --color-card: var(--color-brand-50);
-  --color-popover: var(--color-brand-50);
-
-  /* ── Foregrounds ─────────────────────────────── */
-  --color-foreground: var(--color-brand-950);
-  --color-card-foreground: var(--color-brand-950);
-  --color-popover-foreground: var(--color-brand-950);
-
-  /* ── Primary ─────────────────────────────────── */
-  --color-primary: var(--color-brand-500);
-  /* --color-primary-foreground: var(--color-brand-950); */
-  --color-primary-foreground: var(--color-brand-100);
-
-  /* ── Secondary ───────────────────────────────── */
-  --color-secondary: var(--color-brand-100);
-  --color-secondary-foreground: var(--color-brand-800);
-
-  /* ── Muted ───────────────────────────────────── */
-  --color-muted: var(--color-brand-100);
-  --color-muted-foreground: var(--color-brand-600);
-
-  /* ── Accent ──────────────────────────────────── */
-  --color-accent: var(--color-brand-200);
-  --color-accent-foreground: var(--color-brand-800);
-
-  /* ── Destructive ─────────────────────────────── */
-  --color-destructive: var(--destructive);
-
-  /* ── Border / Input / Ring ───────────────────── */
-  --color-border: var(--color-brand-200);
-  --color-input: var(--color-brand-200);
-  --color-ring: var(--color-brand-500);
-
-  /* ── Sidebar ─────────────────────────────────── */
-  --color-sidebar: var(--color-brand-100);
-  --color-sidebar-foreground: var(--color-brand-900);
-
-  --color-sidebar-primary: var(--color-brand-500);
-  --color-sidebar-primary-foreground: var(--color-brand-950);
-
-  --color-sidebar-accent: var(--color-brand-200);
-  --color-sidebar-accent-foreground: var(--color-brand-800);
-
-  --color-sidebar-border: var(--color-brand-200);
-  --color-sidebar-ring: var(--color-brand-500);
-
-  /* ── Charts ──────────────────────────────────── */
-  --color-chart-1: var(--color-brand-200);
-  --color-chart-2: var(--color-brand-300);
-  --color-chart-3: var(--color-brand-400);
-  --color-chart-4: var(--color-brand-500);
-  --color-chart-5: var(--color-brand-600);
 }
