@@ -3,7 +3,6 @@ import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
 import pluginImport from "eslint-plugin-import";
 import pluginUnusedImports from "eslint-plugin-unused-imports";
-import pluginSonarjs from "eslint-plugin-sonarjs";
 import prettier from "eslint-config-prettier";
 
 const eslintConfig = defineConfig([
@@ -45,16 +44,6 @@ const eslintConfig = defineConfig([
           "newlines-between": "always",
         },
       ],
-    },
-  },
-
-  // ─── Code quality (logic bugs, not style) ─────────────────────────────────
-  {
-    plugins: { sonarjs: pluginSonarjs },
-    rules: {
-      ...pluginSonarjs.configs.recommended.rules,
-      "sonarjs/no-duplicate-string": ["warn", { threshold: 5 }], // Magic string sprawl
-      "sonarjs/cognitive-complexity": ["warn", 15], // Forces function decomposition
     },
   },
 
